@@ -1,0 +1,16 @@
+function LongestWord(sen) {
+  // Remove punctuation and split the sentence into words
+  const words = sen.replace(/[^\w\s]/g, '').split(' ');
+
+  let longestWord = '';
+
+  // Loop through each word and find the longest one
+  for (const word of words) {
+    // Check if the current word is longer than the longestWord found so far
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+
+  return longestWord;
+}
