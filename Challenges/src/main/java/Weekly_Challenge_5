@@ -1,0 +1,8 @@
+function countWords(sentence) {
+  const words = sentence.split(' ');
+  return words.length;
+}
+
+console.log(countWords("Just an example here move along")); // Output: 6
+console.log(countWords("This is a test")); // Output: 4
+console.log(countWords("What an easy task, right")); // Output: 5
